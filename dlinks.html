@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Deep Linking Page</title>
+<style>
+.text{
+font-size: 17px;
+}
+
+.header{
+	color: green;
+}
+</style>
+</head>
+<body>
+<script>
+const launchApp = (url, fallback) =>{
+	window.location = url;
+}
+
+window.onload = () => {
+//alert("window loaded");
+let u = "demo1://confirm-login/kudayisitobi@gmail.com", f ="";
+launchApp(u,f);
+}
+</script>
+<h3 class="green">Testing deep linking on React Navigation</h3>
+<p class="text" id="result">Redicting to the app..</p>
+</body>
+</html>
